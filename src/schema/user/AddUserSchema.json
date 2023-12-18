@@ -1,0 +1,70 @@
+{
+    "type": "object",
+    "properties": {
+        "firstName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+        },
+        "lastName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+        },
+        "phone": {
+            "maxLength": 15,
+            "minLength": 9,
+            "type": "string"
+        },
+        "email": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+        },
+        "password": {
+            "maxLength": 30,
+            "minLength": 2,
+            "type": "string"
+        },
+        "role": {
+            "maxLength": 30,
+            "minLength": 2,
+            "type": "string"
+        },
+        "employeeCode": {
+            "maxLength": 30,
+            "minLength": 2,
+            "type": "string"
+        },
+        "jobTitle": {
+            "maxLength": 30,
+            "minLength": 2,
+            "type": "string"
+        },
+        "status": {
+            "maxLength": 30,
+            "minLength": 2,
+            "type": "string"
+        }
+    },
+    "required": [
+        "firstName",
+        "email",
+        "lastName",
+        "phone",
+        "role",
+        "password"
+    ],
+    "additionalProperties": false,
+    "errorMessage": {
+        "type": "should be an object",
+        "required": {
+            "firstName": "'firstName' must not be empty or null",
+            "lastName": "'lastName' must not be empty or null",
+            "role": "'role' must not be empty or null",
+            "email": "'email' must not be empty or null",
+            "phone": "'phone' must not be empty or null",
+            "password": "'password' must not be empty or null"
+        }
+    }
+}

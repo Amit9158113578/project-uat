@@ -1,0 +1,52 @@
+pipelines:
+  branches:
+    release/2.0.04012020-SNAPSHOT:
+      - step:
+          name: Build and test
+          image: node:12.18.2
+          caches:
+            - node
+          script:
+            - npm install typescript@3.5.2 -g
+            - npm install
+            - npm run package
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploy-Staging
+          image: docker:latest
+          deployment: Staging
+          services:
+            - docker
+          script:
+            - apk add --update --no-cache curl py-pip
+            - pip install awscli
+            - $(aws ecr get-login --no-include-email --region $REGION)
+            - docker build --build-arg environment=staging -t $IMAGE_REPOSITORY_URL .
+            - docker push $IMAGE_REPOSITORY_URL
+            - aws ecs update-service --cluster $CLUSTER  --service $SERVICE --force-new-deployment --region $REGION
+    release/2.0.04012020:
+      - step:
+          name: Build and test
+          image: node:12.18.2
+          caches:
+            - node
+          script:
+            - npm install typescript@3.5.2 -g
+            - npm install
+            - npm run package
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploy-Production
+          image: docker:latest
+          deployment: Production
+          services:
+            - docker
+          script:
+            - apk add --update --no-cache curl py-pip
+            - pip install awscli
+            - $(aws ecr get-login --no-include-email --region $REGION)
+            - docker build --build-arg environment=production -t $IMAGE_REPOSITORY_URL .
+            - docker push $IMAGE_REPOSITORY_URL
+            - aws ecs update-service --cluster $CLUSTER  --service $SERVICE --force-new-deployment --region $REGION

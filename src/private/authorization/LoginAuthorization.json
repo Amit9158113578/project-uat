@@ -1,0 +1,7 @@
+[
+  {
+    "url": "/admin",
+    "method": "post",
+    "allowedScopes": ["admin", "operation"]
+  }
+]

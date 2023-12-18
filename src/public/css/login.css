@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "verdana" !important;
+  font-size: 15px;
+  color: #4d545f;
+  letter-spacing: 0.5px;
+  background: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "verdana" !important;
+}
+.clear {
+  clear: both;
+}
+.content {
+  width: 1250px;
+  padding: 0 20px;
+  margin: 0px auto;
+}
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+  transition: all 0.4s ease;
+  outline: 0;
+}
+a {
+  transition: all 0.4s ease;
+  outline: 0;
+}
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+.btn {
+  letter-spacing: 0.5px;
+  background: #1dcb8b !important;
+  color: #fff !important;
+  height: 40px !important;
+}
+.btn.buttonSub {
+  background: #fff !important;
+  color: #1dcb8b !important;
+  border: 1px solid #1dcb8b !important;
+}
+.btn.buttonSub:hover {
+  border: 1px solid #12439b !important;
+}
+.btn:hover {
+  color: #fff !important;
+  background: #12439b !important;
+}
+#loginPage {
+  background-size: cover;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.rightText {
+  text-align: left;
+}
+
+.buttonLast {
+  text-align: left;
+}
+.buttonLast hr {
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+.buttonLast .bigButton {
+  padding: 6px 20px;
+  width: 140px;
+  margin-right: 20px;
+}
+.form-control {
+  font-size: 15px;
+}
+#loginPage .innerLogin {
+  left: 0px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  padding: 100px 0 20px;
+}
+
+#loginPage .invalid-feedback {
+  text-align: left !important;
+}
+
+.loginLeft {
+  text-align: center;
+  float: left;
+  width: 37%;
+  background: #fff;
+  color: #4d545f;
+  padding: 23px 25px 25px;
+  border-radius: 15px;
+  margin-top: 10%;
+}
+.loginLogo {
+  margin-bottom: 20px;
+  display: block;
+}
+.loginRight {
+  font-size: 17px;
+  padding-top: 200px;
+  float: left;
+  width: 63%;
+  padding-left: 50px;
+}
+#loginPage .content {
+  position: relative;
+  z-index: 2px;
+  padding: 0 50px;
+}
+.loginLeft {
+  margin-bottom: 20px;
+  display: block;
+}
+.loginLeft h2 {
+  margin-bottom: 17px;
+  color: #12439b;
+  font-size: 22px;
+  font-weight: bold;
+}
+.loginLeft h2 span {
+  padding-top: 4px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-family: "montserratsemibold";
+}
+.loginLeft .form-control {
+  margin-bottom: 15px;
+  font-size: 15px;
+  height: 40px;
+  padding: 10px 15px !important;
+}
+.ligLable {
+  display: none;
+}
+.bigButton {
+  width: 100%;
+  padding: 6px;
+  font-size: 15px;
+}
+.loginLeft h4 {
+  text-align: left;
+  font-size: 16px;
+  font-family: "montserratmedium";
+  margin: 35px 0 15px;
+  color: #393e46;
+  font-weight: normal;
+  text-align: center;
+}
+.row.loginSocial {
+  margin-left: -9px;
+  margin-right: -9px;
+}
+.loginSocial a:hover {
+  opacity: 0.8;
+}
+.loginSocial a {
+  display: block;
+  background: #245795;
+  border-radius: 25px;
+  padding: 10px 0;
+  color: #fff;
+}
+.row.loginSocial .col-md-4 {
+  padding-right: 10px;
+  padding-left: 9px;
+}
+.loginSocial a.twitterBG {
+  background: #2aa1f0;
+}
+.loginSocial a.googleBG {
+  background: #d85040;
+}
+.alreadyAccount {
+  margin-top: 12px;
+}
+.alreadyAccount a {
+  text-decoration: underline;
+  color: #13c181;
+}
+.alreadyAccount a:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 1300px) {
+  .content {
+    width: 100%;
+  }
+  #loginPage .content {
+    padding: 0 20px;
+  }
+  #loginPage .innerLogin {
+    padding: 90px 0 20px;
+  }
+
+  .loginRight {
+    padding-left: 30px;
+  }
+  .loginLeft {
+    width: 40%;
+  }
+  .loginRight {
+    width: 60%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .loginRight h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #loginPage .content {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .loginRight {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px 0;
+  }
+  #loginPage .innerLogin {
+    padding: 40px 0 10px;
+  }
+  .loginLeft {
+    width: 430px;
+    max-width: 100%;
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 27px;
+  }
+  .selectUser.selectesUser::before {
+    display: none;
+  }
+  .bigButton,
+  .btn {
+    padding: 6px;
+  }
+  .loginSocial a {
+    margin-bottom: 15px;
+  }
+  .loginLeft {
+    padding: 25px 25px 10px;
+  }
+  .loginLeft h4 {
+    margin: 25px 0 15px;
+  }
+  .loginSocial a {
+    border-radius: 4px;
+  }
+  .loginRight {
+    padding: 20px 0 0;
+  }
+  .buttonLast hr {
+    margin-top: 5px;
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .loginLogo {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .buttonLast .bigButton:nth-child(2) {
+    width: 47%;
+    margin-right: 0;
+  }
+  .buttonLast .bigButton:nth-child(3) {
+    width: 47%;
+    margin-left: 0;
+    margin-right: 0px;
+    float: right;
+  }
+  #loginPage .innerLogin {
+    padding: 15px 0 10px;
+  }
+  .loginLeft {
+    border-radius: 10px;
+    padding: 20px 20px 5px;
+  }
+  .loginRight {
+    font-size: 15px;
+    padding: 10px 0 0;
+  }
+  .loginRight h1 {
+    margin-bottom: 10px;
+  }
+  .loginLeft .form-control {
+    padding: 8px 15px !important;
+    height: 40px;
+  }
+  .btn {
+    height: 40px;
+  }
+  .loginLeft .bigButton {
+    padding: 6px;
+    height: 40px;
+  }
+  .loginSocial a {
+    padding: 8px 0;
+    height: 40px;
+  }
+  .loginLeft h2 {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+}

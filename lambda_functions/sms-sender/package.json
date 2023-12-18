@@ -1,0 +1,20 @@
+{
+    "name": "sms-sender-lambda-function",
+    "version": "1.0.1",
+    "description": "SMS Sender lambda function",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git@bitbucket.org:medtransgo/promanage-mw.git"
+    },
+    "keywords": [
+        "lambda",
+        "aws"
+    ],
+    "author": "Comsense",
+    "license": "ISC",
+    "dependencies": {
+        "aws-sdk": "^2.744.0",
+        "twilio": "^3.55.0"
+    }
+}

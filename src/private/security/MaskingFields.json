@@ -1,0 +1,16 @@
+[
+    "email",
+    "password",
+    "phone",
+    "address",
+    "dob",
+    "fullAddress",
+    "city",
+    "locality",
+    "subLocality",
+    "zip",
+    "landmark",
+    "latitude",
+    "longitude",
+    "participants"
+]
