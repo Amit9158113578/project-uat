@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedTrans Go - <%= applicationName %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<style>
+    .stopWrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-table;
+        color: #000;
+    }
+
+    .stopInn {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px;
+    }
+
+    .stopInn img {
+        width: 450px;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .stopInn h3 {
+        margin: 40px 0 20px;
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .stopInn p {
+        margin-bottom: 50px;
+    }
+
+    .stopInn a {
+        padding: 0 3px;
+        line-height: normal !important;
+        border: 0px none !important;
+    }
+
+    @media screen and (max-width: 992px) {
+        .dashinnerData.settingPadding {
+            padding: 8px 15px 15px;
+        }
+
+        .stopInn h3 {
+            margin: 30px 0 15px;
+            font-size: 21px;
+            letter-spacing: 0.6px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .stopInn img {
+            margin-top: 1px;
+        }
+
+        .stopInn h3 {
+            margin: 20px 0 10px;
+            font-size: 19px;
+            letter-spacing: 0.6px;
+        }
+
+        .stopInn p {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="stopWrapper">
+        <div class="stopInn">
+            <img src="/images/stop.png" alt="stop">
+            <div class="clear"></div>
+            <h3>You are not authorized to access this application</h3>
+            <p>Please contact with your admin to provide access to this application.
+                <span><a href="/v1/authentication?clientId=<%= clientId %>">Go to Login</a></span>
+            </p>
+        </div>
+    </div>
+</body>

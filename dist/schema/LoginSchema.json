@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "password": {
+            "minLength": 8,
+            "type": "string"
+        },
+        "userName": {
+            "minLength": 4,
+            "pattern": "^[a-zA-Z0-9]*$",
+            "type": "string"
+        }
+    },
+    "required": [
+        "password",
+        "userName"
+    ],
+    "additionalProperties": false,
+    "errorMessage": {
+        "type": "should be an object",
+        "properties": "Invalid Username or Password"
+    }
+}

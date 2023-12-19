@@ -1,0 +1,27 @@
+[
+    {
+    "url": "/resetup/:id",
+    "method": "put",
+    "allowedScopes": [
+        "admin",
+        "operation"
+    ]
+},
+{
+    "url": "/:id/removeScope",
+    "method": "put",
+    "allowedScopes": [
+        "admin",
+        "operation"
+    ]
+},
+{
+    "url": "/:id/resetPassword",
+    "method":"put",
+    "allowedScopes": [
+        "admin",
+        "operation"
+    ]
+}
+]
+

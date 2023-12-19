@@ -1,0 +1,5 @@
+{
+    "/v1/users": "UserAuthorization.json",
+    "/v1/login": "LoginAuthorization.json"
+
+}

@@ -1,0 +1,102 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "department": {
+            "type": "object"
+        },
+        "category": {
+            "type": "object"
+        },
+        "client": {
+            "type": "object"
+        },
+        "owner": {
+            "type": "object"
+        },
+        "manager": {
+            "type": "object"
+        },
+        "state": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "Date"
+        },
+        "endDate": {
+            "type": "Date"
+        },
+        "cost": {
+          "type": "number"
+        },
+        "purchaseOrder": {
+          "type": "string"
+        },
+        "profitLoss": {
+          "type": "number"
+        },
+        "renewalDate": {
+            "type": "number"
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "deliverables": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "milestones": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "proposals": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "createdDate": {
+            "type": "number"
+        },
+        "modifiedBy": {
+          "type": "string"
+        },
+        "modifiedDate": {
+            "type": "number"
+        }
+      },
+    "required": [
+      "title"
+    ],
+    "additionalProperties": false,
+    "errorMessage": {
+      "type": "should be an object",
+      "required": {
+        "name": "'title' must not be empty or null"
+      }
+    }
+  }
+  
